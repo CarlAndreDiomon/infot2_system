@@ -52,7 +52,10 @@ const config: Config = {
   			}
   		},
   		backgroundImage: {
-  			main: "url('/image/main_bg.jpg')" 
+  			main: "url('/image/main_bg.jpg')",
+			blogMobile: "url('/image/bg-blog-mobile.jpg')",
+			blogDesktop: "url('/image/bg-blog-desktop.jpg')",
+			blogEngredients: "url('/image/bg-ingredients.jpg')"
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

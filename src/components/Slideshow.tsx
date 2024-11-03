@@ -39,11 +39,11 @@ const Slideshow = () =>{
         <div className=" ">
             {slides.map((slide, index) => (
             <div key={slide.id} style={{display: index === currentIndex ? 'block' : 'none', textAlign: 'center', transition:'opacity 0.5s',}}>
-                <div className=" md:flex md:justify-between">
-                    <Image src={slide.src} alt={slide.alt} width={1000} height={1000} className=" rounded-xl w-full h-52 md:w-96 md:h-72 xl:w-96 xl:mr-32 "/>
+                <div className=" md:bg-transparent md:flex md:justify-between">
+                    <Image src={slide.src} alt={slide.alt} width={1500} height={1500} className=" rounded-xl w-full h-52 md:w-96 md:h-72 xl:h-96 xl:w-1/2 xl:mr-32 "/>
                     <div>
                         <h2 className=" mt-10 text-green-500 font-semibold text-2xl md:mb-5 md:text-3xl lg:font-normal xl:text-5xl" >{slide.title}</h2>
-                        <p className=" text-sm md:w-80 md:text-base xl:text-2xl xl:w-96">{slide.description}</p>
+                        <p className=" text-sm font-normal text-white md:w-80 md:text-base xl:text-2xl xl:w-96">{slide.description}</p>
                     </div>
                 </div>
             </div>
